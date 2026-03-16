@@ -1,0 +1,50 @@
+body{
+font-family: Arial;
+background: #f2f4f8;
+margin:0;
+padding:0;
+}
+
+.container{
+width:80%;
+margin:auto;
+text-align:center;
+}
+
+h1{
+margin-top:20px;
+color:#333;
+}
+
+.card{
+background:white;
+padding:20px;
+margin:20px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+}
+
+img{
+width:250px;
+margin:10px;
+border-radius:10px;
+}
+
+.donate-btn{
+display:inline-block;
+background:#28a745;
+color:white;
+padding:12px 25px;
+border-radius:8px;
+text-decoration:none;
+font-size:18px;
+}
+
+.donate-btn:hover{
+background:#218838;
+}
+
+.qr{
+width:200px;
+margin-top:10px;
+}

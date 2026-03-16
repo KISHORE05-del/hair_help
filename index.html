@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Hair Treatment Support</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Support Hair Treatment</h1>
+
+<div class="card">
+
+<h2>Personal Details</h2>
+
+<p><b>Name:</b> {{ person.name }}</p>
+<p><b>Age:</b> {{ person.age }}</p>
+<p><b>Phone:</b> {{ person.phone }}</p>
+<p><b>Problem:</b> {{ person.problem }}</p>
+
+</div>
+
+<div class="card">
+
+<h2>Hospital Cost</h2>
+
+<p><b>Hospital:</b> {{ person.hospital }}</p>
+<p><b>Cost per graft:</b> {{ person.cost_per_graft }}</p>
+<p><b>Required grafts:</b> {{ person.required_grafts }}</p>
+
+</div>
+
+<div class="card">
+
+<h2>Photos</h2>
+
+<img src="{{ url_for('static', filename='images/sundar.jpeg') }}">
+<img src="{{ url_for('static', filename='images/s1.jpeg') }}">
+
+</div>
+
+<div class="card donate">
+
+<h2>Donate</h2>
+
+<a class="donate-btn"
+href="upi://pay?pa=kishorearjun2006-1@oksbi&pn=Sundar%20D&cu=INR">
+Donate via UPI
+</a>
+
+<p>Or scan QR code</p>
+
+<img src="{{ url_for('static', filename='images/ki_pay.jpeg') }}" class="qr">
+
+</div>
+
+</div>
+
+</body>
+</html>
